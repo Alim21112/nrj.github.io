@@ -1,0 +1,28 @@
+{% extends  'base.html' %}
+{% block content %}
+    <div class="my-form container p-5 my-5 rounded border border-secondary">
+        <form action="{% url 'products' %}">
+            <h2 class="text-center">Advanced Search</h2>
+            <hr>
+            <div class="form-group">
+                <label for="inputSearchProductName">Product Name Contains</label>
+                <input type="text" class="form-control" name="serachname"  id="inputSearchProductName" placeholder="espresso">
+            </div>
+            <div class="form-group">
+                <label for="inputSearchProductDescription" >Product Description Contains</label>
+                <input type="text" class="form-control" name="serach_desc" id="inputSearchProductDescription" placeholder="coffee">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputSearchPrice1">Price Between</label>
+                    <input type="number" class="form-control" name="serach_price_min" id="inputSearchPrice1" placeholder="" value="1000">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputSearchPrice2">And</label>
+                    <input type="number" class="form-control"  name="serach_price_max" id="inputSearchPrice2" placeholder="" value="6000">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-secondary">Search for All</button>
+        </form>
+    </div>
+    {%  endblock %}
