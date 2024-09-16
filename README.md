@@ -1,4 +1,4 @@
-# Site-Web-cofee-Django-Postgresql
+# Site-Web-cofee-Django-Nrj
 #superuser
   login:admin
   mdp:12345
